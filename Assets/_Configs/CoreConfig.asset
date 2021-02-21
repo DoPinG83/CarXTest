@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb76dccb82fe4df9b3c0bfca65c4f09, type: 3}
+  m_Name: CoreConfig
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 8966066027703124282, guid: 52a194a0bb0504fcbbc19266d9b81420, type: 3}
+  - {fileID: 8966066027703124282, guid: bde8dd79b93444e82a7fdff174568f4e, type: 3}
+  - {fileID: 8966066027703124282, guid: 6b77024aad5b848c1b9fd5b9dba375bb, type: 3}
+  levelRewards: 3200000032000000320000003200000032000000
+  cyclingLevel: 0
+  bulletDict:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - CannonProjectile_L1
+    - CannonProjectile_L2
+    - CannonProjectile_L3
+    - HomingProjectile_L1
+    - HomingProjectile_L2
+    - HomingProjectile_L3
+    _keys:
+    - CannonProjectile_L1
+    - CannonProjectile_L2
+    - CannonProjectile_L3
+    - HomingProjectile_L1
+    - HomingProjectile_L2
+    - HomingProjectile_L3
+    _values:
+    - PrefabName: CannonProjectile
+      Speed: 20
+      Damage: 5
+      UseGravity: 1
+    - PrefabName: CannonProjectile
+      Speed: 20
+      Damage: 6
+      UseGravity: 0
+    - PrefabName: CannonProjectile
+      Speed: 20
+      Damage: 7
+      UseGravity: 1
+    - PrefabName: HomingProjectile
+      Speed: 10
+      Damage: 5
+      UseGravity: 0
+    - PrefabName: HomingProjectile
+      Speed: 10
+      Damage: 6
+      UseGravity: 0
+    - PrefabName: HomingProjectile
+      Speed: 10
+      Damage: 7
+      UseGravity: 0
+  enemyDict:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - EnemyWeak
+    - EnemyMiddle
+    - EnemyStrong
+    _keys:
+    - EnemyWeak
+    - EnemyMiddle
+    - EnemyStrong
+    _values:
+    - PrefabName: EnemyBlue
+      Speed: 4
+      HP: 15
+    - PrefabName: EnemyGreen
+      Speed: 3.5
+      HP: 20
+    - PrefabName: EnemyRed
+      Speed: 3
+      HP: 25
+  gunDict:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues:
+    - Crystal_Weapon_L1
+    - Crystal_Weapon_L2
+    - Crystal_Weapon_L3
+    - Cannon_L1
+    - Cannon_L2
+    - Cannon_L3
+    _keys:
+    - Crystal_Weapon_L1
+    - Crystal_Weapon_L2
+    - Crystal_Weapon_L3
+    - Cannon_L1
+    - Cannon_L2
+    - Cannon_L3
+    _values:
+    - PrefabName: Crystal_Weapon_L1
+      BulletName: HomingProjectile_L1
+      FireRate: 0.75
+      ArgoDist: 20
+      BulletMaxDist: 30
+      PlatformRotSpeed: 0
+      BarrelRotSpeed: 0
+    - PrefabName: Crystal_Weapon_L2
+      BulletName: HomingProjectile_L2
+      FireRate: 1
+      ArgoDist: 20
+      BulletMaxDist: 30
+      PlatformRotSpeed: 0
+      BarrelRotSpeed: 0
+    - PrefabName: Crystal_Weapon_L3
+      BulletName: HomingProjectile_L3
+      FireRate: 1.25
+      ArgoDist: 20
+      BulletMaxDist: 30
+      PlatformRotSpeed: 0
+      BarrelRotSpeed: 0
+    - PrefabName: Cannon_L1
+      BulletName: CannonProjectile_L1
+      FireRate: 0.75
+      ArgoDist: 25
+      BulletMaxDist: 30
+      PlatformRotSpeed: 30
+      BarrelRotSpeed: 10
+    - PrefabName: Cannon_L2
+      BulletName: CannonProjectile_L2
+      FireRate: 1
+      ArgoDist: 25
+      BulletMaxDist: 30
+      PlatformRotSpeed: 35
+      BarrelRotSpeed: 12.5
+    - PrefabName: Cannon_L3
+      BulletName: CannonProjectile_L3
+      FireRate: 1.25
+      ArgoDist: 25
+      BulletMaxDist: 30
+      PlatformRotSpeed: 40
+      BarrelRotSpeed: 15
