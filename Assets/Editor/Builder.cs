@@ -12,6 +12,12 @@ public class Builder
         GenericBuild(scenes, GetDefaultPathProjectAndroid(), BuildTargetGroup.Android, BuildTarget.Android);
     }
     
+    public static void BuildIOS()
+    {
+        var scenes = GetEnabledEditorScenes();
+        GenericBuild(scenes, GetDefaultPathProjectIOS(), BuildTargetGroup.iOS, BuildTarget.iOS);
+    }
+    
     public static string[] GetEnabledEditorScenes()
     {
         List<string> editorScenes = new List<string>();
