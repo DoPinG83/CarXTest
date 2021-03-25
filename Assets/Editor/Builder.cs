@@ -48,13 +48,13 @@ public static void GenericBuild(string[] scenes, string targetDir, BuildTargetGr
 
     private static string GetDefaultPathProjectIOS()
     {
-        string path = "../Builds/CarX_Text";
+        string path = "CarX_Text";
         return path;
     }
 
     private static string GetDefaultPathProjectAndroid()
     {
-        string path = "../Builds/CarX_Text.apk";
+        string path = "CarX_Text.apk";
         return path;
     }
 }
