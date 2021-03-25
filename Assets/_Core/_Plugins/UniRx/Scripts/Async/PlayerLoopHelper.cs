@@ -4,7 +4,7 @@
 using System;
 using System.Linq;
 using UnityEngine;
-#if UNITY_2019_3 || UNITY_2019_4
+#if UNITY_2019_3 || UNITY_2019_4 || UNITY_2020
 using UnityEngine.LowLevel;
 #else
 using UnityEngine.Experimental.LowLevel;
